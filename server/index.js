@@ -25,7 +25,7 @@ app.use(Session({
 }))
 
 const corsOptions = {
-  Origin: "https://full-stack-client-sable.vercel.app",
+  Origin: "https://laiba-02-client.vercel.app",
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   credentials: true,
 };
