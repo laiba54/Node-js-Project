@@ -68,7 +68,7 @@ const Signup = () => {
     if (form.profile) formdata.append("profile", form.profile);
 
     try {
-      await axios.post("https://full-stack-server-two.vercel.app/signup", formdata, {
+      await axios.post("https://laiba-02-server.vercel.app/signup", formdata, {
         mode: "cors",
         credentials: "include",
         headers: {
@@ -86,7 +86,7 @@ const Signup = () => {
   };
 
   const handleGoogleSignup = () => {
-    window.location.href = "https://full-stack-server-two.vercel.app/google";
+    window.location.href = "https://laiba-02-server.vercel.app/google";
   };
 
   return (

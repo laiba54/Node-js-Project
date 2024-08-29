@@ -29,7 +29,7 @@ const Login = () => {
 
     try {
       const res = await axios.post(
-        "https://full-stack-server-two.vercel.app/login",
+        "https://laiba-02-server.vercel.app/login",
         form,
         {
           mode: "cors",
@@ -50,7 +50,7 @@ const Login = () => {
   };
 
   const handleGoogleLogin = () => {
-    window.location.href = "https://full-stack-server-two.vercel.app/google";
+    window.location.href = "https://laiba-02-server.vercel.app/google";
   };
 
   return (

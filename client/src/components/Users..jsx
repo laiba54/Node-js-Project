@@ -9,7 +9,7 @@ const Users = () => {
 
   useEffect(() => {
     axios
-      .get("https://full-stack-server-two.vercel.app/getallusers")
+      .get("https://laiba-02-server.vercel.app/getallusers")
       .then((response) => {
         if (response.data.length === 0) {
           navigate("/");
@@ -35,7 +35,7 @@ const Users = () => {
               >
                 <div className="mt-2 d-flex justify-content-center">
                   <img
-                    src={`https://full-stack-server-two.vercel.app/uploads/${user.profile}`}
+                    src={`https://laiba-02-server.vercel.app/uploads/${user.profile}`}
                     width={80}
                     height={80}
                     style={{ borderRadius: "50%" }}
