@@ -40,7 +40,7 @@ const Login = () => {
         }
       );
       console.log(res.data);
-      navigate("/profile");
+      navigate("profile");
     } catch (error) {
       console.error("Login error:", error.response?.data || error.message);
       setError("Invalid email or password!");
