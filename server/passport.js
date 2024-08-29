@@ -7,7 +7,7 @@ passport.use(
         {
             clientID : process.env.CLIENT_ID,
             clientSecret : process.env.CLIENT_SECRET,
-            callbackURL : "https://laiba-02-server.vercel.app/google/callback",
+            callbackURL : "https://node-js-project-weld.vercel.app/google/callback",
             scope : ['profile', 'email'],
         },
         function (accessToken, refreshToken, profile, done){

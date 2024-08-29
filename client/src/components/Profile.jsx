@@ -37,7 +37,7 @@ const Profile = () => {
     try {
       const token = localStorage.getItem("authToken");
       const response = await axios.patch(
-        `https://laiba-02-server.vercel.app/updateusers/${editingUser._id}`,
+        `https://node-js-project-weld.vercel.app/updateusers/${editingUser._id}`,
         formdata,
         {
           headers: {
@@ -72,7 +72,7 @@ const Profile = () => {
     const token = localStorage.getItem("authToken");
 
     axios
-      .get("https://laiba-02-server.vercel.app/getusers", {
+      .get("https://node-js-project-weld.vercel.app/getusers", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -111,7 +111,7 @@ const Profile = () => {
             <div className="d-flex flex-column mt-3">
               <div className="mt-5">
                 <img
-                  src={`https://laiba-02-server.vercel.app/uploads/${user.profile}`}
+                  src={`https://node-js-project-weld.vercel.app/uploads/${user.profile}`}
                   width={120}
                   height={120}
                   style={{ borderRadius: "50%" }}
