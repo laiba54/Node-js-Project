@@ -8,8 +8,9 @@
         "src" : "/(.*)",
         "dest" : "src/index.js",
         "methods" : ["GET" , "POST", "PUSH", "DELETE", "PATCH", "OPTIONS"],
-        "headers" : {
-            "Access-Control-Allow-Origin" : "*"
-        }
+        "headers" : [
+            { "key": "Access-Control-Allow-Origin", "value": "*" },
+            {  "key": "Access-Control-Allow-Credentials", "value": "true" }
+        ]
     }]
 }
