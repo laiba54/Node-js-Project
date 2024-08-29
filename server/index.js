@@ -65,4 +65,4 @@ app.get('/getallusers', (req, res) => {
 });
 
 
-app.listen(8001, () => console.log("server started"));
+app.listen(8000, () => console.log("server started"));
